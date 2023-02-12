@@ -1,4 +1,4 @@
-# nup_poder_judiciario
+# Numeração Única do Poder Judiciário - nup_poder_judiciario
 
 Este package oferece funcionalidades relacionadas à numeração única de processos do Poder Judiciário, que segue a estrutura NNNNNNN-DD.AAAA.J.TR.OOOO, instituida pelo Conselho Nacional de Justiça.
 
