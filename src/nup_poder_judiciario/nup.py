@@ -29,6 +29,12 @@ class NumeroUnicoProcesso:
         self.tribunal = numero['tribunal']
         self.orgao = numero['orgao']
 
+    def __str__(self):
+        return self.formatado()
+
+    def __int__(self):
+        return int(self.soNumeros())
+
     def dicionariza(self, numero: str) -> dict:
         numero_dic = dict()
         numero_dic['numero'] = numero[:-13] # (NNNNNNN)

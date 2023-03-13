@@ -126,6 +126,22 @@ class TestDicionariza(unittest.TestCase):
         result = NumeroUnicoProcesso(data)
         self.assertEqual(result.orgao, '3600')
 
+class TestDunder(unittest.TestCase):
+    def test_dunder_string(self):
+        """
+        Testa se a chave número está com o valor correto
+        """
+        data = '1024981-09.2022.4.01.3600'
+        result = NumeroUnicoProcesso(data)
+        self.assertEqual(str(result), data)
+
+    def test_dunder_integer(self):
+        """
+        Testa se a chave número está com o valor correto
+        """
+        data = '1024981-09.2022.4.01.3600'
+        result = NumeroUnicoProcesso(data)
+        self.assertEqual(int(result), 10249810920224013600)
 
 
 if __name__ == '__main__':
